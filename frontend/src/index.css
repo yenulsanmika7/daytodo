@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Josefin+Sans:wght@300;400&family=Rubik&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.rubik-font {
+    font-family: 'Rubik';
+    letter-spacing: 0.7px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.checkbox-border-wrap {
+    padding: 0.1rem;
+    display: inline-flex;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.checkbox {
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: inherit;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.title-todo {
+    position: relative;
+    bottom: 3px;
+    color: hsl(236, 9%, 61%);
+}
+
+.font-custom {    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.popup-animation {
+    width: 45rem;
+    height: 27rem;
+    border-radius: 7px;
+    animation: dropTop 0.3s linear;
+}
+
+.todo-logo {
+    width: 35px;
+}
+
+@keyframes dropTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }    
+}
